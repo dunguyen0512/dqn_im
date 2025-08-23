@@ -1,4 +1,4 @@
-name: dqn-gpu218
+name: dqn-tf218
 channels:
   - defaults
   - https://repo.anaconda.com/pkgs/main
