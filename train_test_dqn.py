@@ -277,9 +277,9 @@ def train_and_test(args):
                                                           out_dir=args.out_dir,
                                                           tag=f"test_ep{ep:04d}",
                                                           save_eval_frames=None)
-                frames_dir = os.path.join(args.out_dir, "frames_eval", f"ep{ep:06d}")
-                os.makedirs(frames_dir, exist_ok=True)
-                agent.q_net.save(os.path.join(frames_dir, f"model_at_ep{ep:06d}.keras"))
+                # frames_dir = os.path.join(args.out_dir, "frames_eval", f"ep{ep:06d}")
+                # os.makedirs(frames_dir, exist_ok=True)
+                # agent.q_net.save(os.path.join(frames_dir, f"model_at_ep{ep:06d}.keras"))
                 logger.info(f"[TestCheck] ep={ep:04d} test_acc={testacc:.3f}, test_f1={testf1:.3f}")
                 logger.info(f"[TestCheck] done: save test model \n ")
 
